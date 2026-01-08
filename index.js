@@ -52,11 +52,25 @@ function removeDuplicates(arr) {
 
 // Problem 6 Solution:
 function sumArray(arr) {
-  let sum = 0;
+    let sum = 0;
 
-  for (const num of arr) {
-    sum += num;
-  }
-  return sum;
+    for (const num of arr) {
+        sum += num;
+    }
+    return sum;
 }
 // console.log(sumArray([1, 2, 3, 4]));
+
+
+// Problem 7 Solution:
+function findEvenNumbers(arr) {
+    const evens = [];
+
+    for (const num of arr) {
+        if (num % 2 === 0) {
+            evens.push(num);
+        }
+    }
+    return evens;
+}
+// console.log(findEvenNumbers([1, 2, 3, 4, 5, 6]));
