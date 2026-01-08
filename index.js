@@ -22,8 +22,15 @@ function countVowels(str) {
 
 // Problem 3 Solution:
 function isPalindrome(str) {
-  const reversed = str.split("").reverse().join("");
-  return str === reversed;
+    const reversed = str.split("").reverse().join("");
+    return str === reversed;
 }
 // console.log(isPalindrome("madam"));
 // console.log(isPalindrome("hello"));
+
+
+// Problem 4 Solution:
+function findMax(arr) {
+    return Math.max(...arr);
+}
+console.log(findMax([5, 1, 9, 3])); 
