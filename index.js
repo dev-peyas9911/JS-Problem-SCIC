@@ -78,9 +78,21 @@ function findEvenNumbers(arr) {
 
 // Problem 8 Solution:
 function capitalizeWords(str) {
-  return str
-    .split(" ")
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
+    return str
+        .split(" ")
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ");
 }
 // console.log(capitalizeWords("hello world")); 
+
+
+// Problem 9 Solution:
+function factorial(n) {
+    let result = 1;
+
+    for (let i = 1; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}
+// console.log(factorial(5));
